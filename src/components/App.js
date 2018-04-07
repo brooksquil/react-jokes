@@ -1,18 +1,20 @@
+// Where all other components are imported and inserted for render
+
+// import react component
 import React, { Component } from 'react';
-import logo from '../images/logo.png';
+// import global styles
 import './App.css';
+
+// import components to render
+import Header from './Header';
+import Joke from './Joke';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Header title="Make Me Laugh!" />
+        <Joke />
       </div>
     );
   }
